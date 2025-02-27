@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1514868b6be8af4a869fb523c5fee8e, type: 3}
+  m_Name: Gym1Loss
+  m_EditorClassIdentifier: 
+  storyText: "Zonder een tweede keer na te denken, besluit je om de gym binnen te
+    stappen. Tijdens het gevecht kom je erachter waarom Pok\xE9centers zo belangrijk
+    zijn voor trainers. Je Charmander is weliswaar een Charmeleon geworden, maar
+    dat neemt niet weg dat Brock korte metten maakt met je verzwakte Pok\xE9mon.
+    Het duurt dan ook niet lang voordat je met gebogen hoofd naar buiten stapt en
+    besluit dat het trainersleven niks voor jou is."
+  nextStoryNodes:
+  - {fileID: 11400000, guid: c0aca2ce9c7478347b99889a49b684dd, type: 2}
+  nextStoryNodeText:
+  - Begin opnieuw

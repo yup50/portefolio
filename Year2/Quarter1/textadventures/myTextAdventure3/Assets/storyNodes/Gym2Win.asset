@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1514868b6be8af4a869fb523c5fee8e, type: 3}
+  m_Name: Gym2Win
+  m_EditorClassIdentifier: 
+  storyText: "Eenmaal binnen in de tweede gym besluit je met goede moed naar Misty
+    toe te stappen. Ze neemt je uitdaging aan en dankzij je harde training, sterke
+    Pok\xE9mon en uitgewerkte strategie\xEBn verwerf je in korte tijd je tweede gymbadge.
+    Maar dit is nog maar het begin. Na een lange reis met veel voor- en tegenslagen
+    is de titel Pok\xE9mon Meester eindelijk van jou."
+  nextStoryNodes:
+  - {fileID: 11400000, guid: c0aca2ce9c7478347b99889a49b684dd, type: 2}
+  nextStoryNodeText:
+  - Voor een nieuwe start

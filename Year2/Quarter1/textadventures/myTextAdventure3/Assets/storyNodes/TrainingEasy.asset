@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1514868b6be8af4a869fb523c5fee8e, type: 3}
+  m_Name: TrainingEasy
+  m_EditorClassIdentifier: 
+  storyText: "Met je nieuwe vuurspuwende vriend aan je riem begin je met trainen
+    op de vroege routes. Je verslaat alles en iedereen om je heen in \xE9\xE9n keer
+    en besluit naar de gym te gaan om je eerste badge te verkrijgen."
+  nextStoryNodes:
+  - {fileID: 11400000, guid: 8df6c875369a7a0459a89b3b55867487, type: 2}
+  nextStoryNodeText:
+  - Bezoek brock

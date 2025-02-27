@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1514868b6be8af4a869fb523c5fee8e, type: 3}
+  m_Name: ExtraTraining
+  m_EditorClassIdentifier: 
+  storyText: "Je besluit acht te slaan op deze nachtmerrie en de volgende dag staat
+    weer in het teken van training. Je daagt ook andere trainers uit om zo betere
+    strategie\xEBn te verkrijgen. Daarnaast vang je nog wat extra Pok\xE9mon om beter
+    voorbereid te zijn op verschillende situaties. En dan besluit je opnieuw de gym
+    uit te dagen."
+  nextStoryNodes:
+  - {fileID: 11400000, guid: cbbe9f3be6dbe41428556c1274c30ef3, type: 2}
+  nextStoryNodeText:
+  - Bezoek Brock

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1514868b6be8af4a869fb523c5fee8e, type: 3}
+  m_Name: Gym1WinGrass
+  m_EditorClassIdentifier: 
+  storyText: "Na een nachtje in het Pok\xE9center te hebben gespendeerd, voel je
+    je klaar voor de grote test. Je hebt genoeg getraind met Bulbasaur, want binnen
+    enkele minuten stap je met je eerste badge en een vers ge\xEBvolueerde Ivysaur
+    naar buiten. Helemaal in je nopjes besluit je de volgende gym ook te bezoeken
+    om de verloren tijd van het trainen in te halen."
+  nextStoryNodes:
+  - {fileID: 11400000, guid: a405e679b8a244f469a51dac9e8d9251, type: 2}
+  nextStoryNodeText:
+  - Bezoek Misty

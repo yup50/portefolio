@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1514868b6be8af4a869fb523c5fee8e, type: 3}
+  m_Name: Training
+  m_EditorClassIdentifier: 
+  storyText: "Met je verkoelende starter aan je riem begin je de weg naar Pok\xE9mon
+    Meester. Na een tijdje te trainen op de vroege routes, besluit je om de gym te
+    doen. Je besluit een Pok\xE9center te bezoeken ter voorbereiding op de volgende
+    dag."
+  nextStoryNodes:
+  - {fileID: 11400000, guid: d8170420822db7e4782e015507a080c2, type: 2}
+  nextStoryNodeText:
+  - Ga naar het pokecenter

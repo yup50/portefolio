@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1514868b6be8af4a869fb523c5fee8e, type: 3}
+  m_Name: Gym1Easy
+  m_EditorClassIdentifier: 
+  storyText: "Wanneer je binnenstapt, word je meteen aangesproken door de gymleider
+    Brock. Hij heeft je zien trainen en, vanwege de kracht van je Pok\xE9mon en zijn
+    eigen goede humeur na een eenvoudige charmeleontrainer te hebben verslagen, besluit
+    hij dat je de badge gewoon krijgt. Je had hem toch wel eenvoudig gewonnen, en
+    zo worden de gym-Pok\xE9mon niet overwerkt. Je besluit naar de tweede gym te
+    gaan, want je had je zo verheugd op een spannend gevecht. Je vers ge\xEBvolueerde
+    Wartortle staat ook met vuur in zijn ogen klaar om een badge te VERDIENEN in
+    plaats van te KRIJGEN."
+  nextStoryNodes:
+  - {fileID: 11400000, guid: a405e679b8a244f469a51dac9e8d9251, type: 2}
+  nextStoryNodeText:
+  - Bezoek Misty
