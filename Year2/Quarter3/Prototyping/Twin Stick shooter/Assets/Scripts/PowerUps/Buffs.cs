@@ -39,6 +39,7 @@ public class Buffs : MonoBehaviour
         if (temp.type == "heal")
         {
             GetComponent<PlayerController>().TakeDamage(-1);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<LivesSystem>().UpdateUI();
             Destroy(collision.gameObject);
         }
     }

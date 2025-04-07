@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField]
     private InputActionReference moveActionToUse, shootActionToUse;
+    private Rigidbody2D rb;
 
     [SerializeField]
     private float speed;
@@ -21,7 +22,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Screenmanager sm;
 
-    public int hp = 3;
 
     [SerializeField]
     private Buffs buffs;
@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
         nextFire = 0;
         fireRate = 0.5f;
         buffs = GetComponent<Buffs>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Reads both stick directions and checks if right stick axis isn't zero to shoot
@@ -54,17 +55,26 @@ public class PlayerController : MonoBehaviour
     {
         if (buffs.moreSpeed)
         {
-            speed = 3f;
+            speed = 9f;
         }
         else
         {
-            speed = 1;
+            speed = 3f;
         }
         transform.Translate(moveDirection * speed * Time.fixedDeltaTime);
 
         float clampedX = Mathf.Clamp(transform.position.x, sm.minX, sm.maxX);
         float clampedY = Mathf.Clamp(transform.position.y, sm.minY, sm.maxY);
         transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+
+        if (moveDirection.x < 0) // Links bewegen
+        {
+            transform.localScale = new Vector3(-10, transform.localScale.y, transform.localScale.z);
+        }
+        else if (moveDirection.x > 0) // Rechts bewegen
+        {
+            transform.localScale = new Vector3(10, transform.localScale.y, transform.localScale.z);
+        }
     }
 
     // Spawns new bullet and gives it a direction
@@ -93,7 +103,6 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        hp-= damage;
-        Debug.Log(hp);
+        GetComponent<LivesSystem>().TakeDamage(damage);
     }
 }

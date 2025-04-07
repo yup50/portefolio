@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.CompareTag("Bullet"))
         {
+            GameObject.FindGameObjectWithTag("Manager").GetComponent<ScoreManager>().IncreaseScore(100);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }

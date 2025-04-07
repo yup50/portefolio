@@ -63,7 +63,7 @@ public class SpawnManager : MonoBehaviour
         int randomIndex = Random.Range(0, powerUps.Count);
         GameObject selectedPowerUp = powerUps[randomIndex];
 
-        Vector2 spawnPosition = new Vector2(Random.Range(sm.minX, sm.maxX), Random.Range(sm.minY, sm.maxY));
+        Vector2 spawnPosition = new Vector2(Random.Range(sm.minX + 2, sm.maxX - 2), Random.Range(sm.minY + 2, sm.maxY - 2));
         Instantiate(selectedPowerUp, spawnPosition, Quaternion.identity);
     }
 
