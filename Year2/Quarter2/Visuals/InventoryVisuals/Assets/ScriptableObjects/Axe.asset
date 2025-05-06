@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc143295e4981884a83a4d1fed989ff5, type: 3}
-  m_Name: Potion
+  m_Name: Axe
   m_EditorClassIdentifier: 
-  itemName: Potion
-  itemAmount: 4
-  itemType: Item
-  icon: {fileID: 422217892, guid: 4be2b2d44d250ee42b80cd311728b13a, type: 3}
-  stacksize: 10
-  description: soothing to the mind. Healing for the body
+  itemName: Axe
+  itemAmount: 2
+  itemType: Weapon
+  icon: {fileID: 369783506, guid: 4be2b2d44d250ee42b80cd311728b13a, type: 3}
+  stacksize: 3
+  description: nice and sharp
