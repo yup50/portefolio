@@ -24,6 +24,21 @@ public class ActionMasterTest
         List<int> rolls = new List<int> { 3, 4 }; // Een normale beurt zonder strike of spare
         Assert.AreEqual(endTurn, ActionMaster.NextAction(rolls)); // Na twee worpen moet de beurt eindigen
     }
+
+    [Test]
+    public void StrikeImmediatelyEndsTurnBefore10thFrame()
+    {
+        List<int> rolls = new List<int> { 10 };
+        Assert.AreEqual(endTurn, ActionMaster.NextAction(rolls));
+    }
+
+    [Test]
+    public void NonStrikeFirstRollReturnsTidy()
+    {
+        List<int> rolls = new List<int> { 7 };
+        Assert.AreEqual(tidy, ActionMaster.NextAction(rolls));
+    }
+
     [Test]
     public void SpareInTenthFrameGrantsOneExtraRoll()
     {
