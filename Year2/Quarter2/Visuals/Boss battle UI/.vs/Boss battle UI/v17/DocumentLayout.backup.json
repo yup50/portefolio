@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\school\\prototype\\boss battle ui\\assets\\scripts\\ztest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ztest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\assets\\scripts\\sliders\\enemyhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sliders\\enemyhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\assets\\scripts\\sliders\\playerhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sliders\\playerhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\school\\prototype\\boss battle ui\\assets\\scripts\\ztest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ztest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\assets\\scripts\\sliders\\exp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sliders\\exp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\school\\prototype\\boss battle ui\\assets\\scripts\\spellbuttons\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spellbuttons\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\assets\\scripts\\sliders\\enemyhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sliders\\enemyhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{751DD98D-322F-38DE-3B79-5D454C3BF913}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\assets\\scripts\\sliders\\mana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,68 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Spell.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\SpellButtons\\Spell.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpellButtons\\Spell.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\SpellButtons\\Spell.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpellButtons\\Spell.cs",
+              "ViewState": "AgIAAAoAAACgmZmZmZkhwBgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T11:06:18.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "EnemyHp.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\Sliders\\EnemyHp.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sliders\\EnemyHp.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\Sliders\\EnemyHp.cs",
               "RelativeToolTip": "Assets\\Scripts\\Sliders\\EnemyHp.cs",
-              "ViewState": "AgIAAAYAAADQLzMzMzMLwAYAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAADA0czMzIwgwCQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T23:23:11.707Z"
+              "WhenOpened": "2025-01-22T23:23:11.707Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Exp.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\Sliders\\Exp.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sliders\\Exp.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\Sliders\\Exp.cs",
               "RelativeToolTip": "Assets\\Scripts\\Sliders\\Exp.cs",
-              "ViewState": "AgIAACMAAAAAyszMzMwDwDEAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAZWZmZmYDwDEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T23:12:22.059Z"
+              "WhenOpened": "2025-01-22T23:12:22.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "zTest.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\zTest.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\zTest.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\zTest.cs",
               "RelativeToolTip": "Assets\\Scripts\\zTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAACAkJmZmZkVwCAAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T23:00:50.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Mana.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\Sliders\\Mana.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sliders\\Mana.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\Sliders\\Mana.cs",
               "RelativeToolTip": "Assets\\Scripts\\Sliders\\Mana.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAuwDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAABAAAAAAAAuwDYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T22:58:04.023Z"
+              "WhenOpened": "2025-01-22T22:58:04.023Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PlayerHp.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\Sliders\\PlayerHp.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sliders\\PlayerHp.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\School\\prototype\\Boss battle UI\\Assets\\Scripts\\Sliders\\PlayerHp.cs",
               "RelativeToolTip": "Assets\\Scripts\\Sliders\\PlayerHp.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAuwDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAZWZmZmYqwBsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T22:48:25.15Z"
+              "WhenOpened": "2025-01-22T22:48:25.15Z",
+              "EditorCaption": ""
             }
           ]
         }
