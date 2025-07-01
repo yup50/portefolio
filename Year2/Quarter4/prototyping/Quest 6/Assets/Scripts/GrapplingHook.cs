@@ -1,8 +1,4 @@
-﻿// GameDev.tv Challenge Club. Got questions or want to share your nifty solution?
-// Head over to - http://community.gamedev.tv
-
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 public class GrapplingHook : MonoBehaviour
@@ -13,9 +9,11 @@ public class GrapplingHook : MonoBehaviour
     [SerializeField] private float grappleSpeed = 3f;
     [SerializeField] private GameObject playerHand;
 
-    DistanceJoint2D joint;
-    Vector3 targetPos;
-    RaycastHit2D hit;
+    private DistanceJoint2D joint;
+    private Vector3 grapplePoint;
+    private RaycastHit2D hit;
+
+    private bool isGrappling = false;
 
     private void Start()
     {
@@ -26,52 +24,83 @@ public class GrapplingHook : MonoBehaviour
 
     private void Update()
     {
-        PullPlayer();
-
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !isGrappling)
         {
-            targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             targetPos.z = 0;
-
-            Debug.Log(targetPos);
 
             hit = Physics2D.Raycast(playerHand.transform.position, targetPos - playerHand.transform.position, distance, mask);
 
-            if (hit.collider != null && hit.collider.gameObject.GetComponent<Rigidbody2D>() != null)
+            if (hit.collider != null)
             {
-                joint.enabled = true;
-                joint.connectedBody = hit.rigidbody;
-
-                //Challenge 3:
-
-                joint.distance = Vector2.Distance(playerHand.transform.position, hit.point);
-
-                line.enabled = true;
-                line.SetPosition(0, playerHand.transform.position);
-                line.SetPosition(1, hit.point);
-
+                grapplePoint = hit.point;
+                StartCoroutine(ShootGrapple());
             }
         }
 
-        if (Input.GetMouseButton(0))
+        // Hou de lijn up-to-date
+        if (joint.enabled)
         {
             line.SetPosition(0, playerHand.transform.position);
+            line.SetPosition(1, grapplePoint);
+
+            // Trek speler binnen
+            float step = grappleSpeed * Time.deltaTime;
+            joint.distance = Mathf.Max(0.5f, joint.distance - step);
+
+            // Automatisch loskoppelen
+            if (joint.distance <= 0.6f)
+            {
+                ReleaseGrapple();
+            }
         }
 
+        // Handmatig loslaten
         if (Input.GetMouseButtonUp(0))
         {
-            joint.enabled = false;
-            line.enabled = false;
+            ReleaseGrapple();
         }
     }
 
-    private void PullPlayer()
+    private IEnumerator ShootGrapple()
     {
-        
+        isGrappling = true;
+        line.enabled = true;
+
+        Vector3 start = playerHand.transform.position;
+        Vector3 end = grapplePoint;
+
+        float duration = 0.2f;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / duration;
+
+            Vector3 currentPoint = Vector3.Lerp(start, end, t);
+            line.SetPosition(0, playerHand.transform.position);
+            line.SetPosition(1, currentPoint);
+
+            yield return null;
+        }
+
+        // Pas verbinden na animatie
+        joint.enabled = true;
+        joint.autoConfigureConnectedAnchor = false;
+        joint.connectedAnchor = grapplePoint;
+        joint.connectedBody = null;
+        joint.distance = Vector2.Distance(playerHand.transform.position, grapplePoint);
+
+        line.SetPosition(0, playerHand.transform.position);
+        line.SetPosition(1, grapplePoint);
+
+        isGrappling = false;
     }
 
-    private void Test()
+    private void ReleaseGrapple()
     {
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(1, 1),ForceMode2D.Impulse);
+        joint.enabled = false;
+        line.enabled = false;
     }
 }

@@ -393,7 +393,9 @@
 "Assets/Imported Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/Imported Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
 "Assets/ReadMe.cs"
+"Assets/Scripts/Coin.cs"
 "Assets/Scripts/GrapplingHook.cs"
+"Assets/Scripts/ScoreText.cs"
 -langversion:9.0
 /deterministic
 /optimize+
