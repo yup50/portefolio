@@ -18,8 +18,8 @@ public class Food : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            gameHandler.updateFood(1);
             Destroy(gameObject);
-            gameHandler.updateFood();
         }
     }
 }

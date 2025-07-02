@@ -13,6 +13,7 @@ public class GameHandler : MonoBehaviour
     [SerializeField] private TMP_Text FoodAmountText;
 
     [SerializeField] private int foodCollected = 0;
+    private Attack attack; //Challenge 8. i made an attack
 
     private void Awake()
     {
@@ -26,24 +27,29 @@ public class GameHandler : MonoBehaviour
             DontDestroyOnLoad(gameObject);
 
         }
+        attack = FindAnyObjectByType<Attack>(); //reference to attack script
     }
 
     private void Start()
     {
         FoodAmountText = GameObject.Find("FoodAmountText").GetComponent<TMP_Text>();
-
     }
 
     private void Update()
     {
-        FoodAmountText = GameObject.Find("FoodAmountText").GetComponent<TMP_Text>();
+        if(FoodAmountText == null)FoodAmountText = GameObject.Find("FoodAmountText").GetComponent<TMP_Text>();
 
         FoodAmountText.text = foodCollected.ToString();
+        if (Input.GetKeyDown(KeyCode.E) && foodCollected >= 5) //attacks cost 5 food points
+        {
+            updateFood(-5);
+            attack.gameObject.SetActive(true);
+        }
     }
 
-    public void updateFood()
+    public void updateFood(int amount)
     {
-        foodCollected++;
+        foodCollected += amount;
     }
 
     public void resetFoodCount()
